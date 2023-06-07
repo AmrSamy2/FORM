@@ -1,54 +1,193 @@
-:root{
-  padding: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-   
-
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 
 
-.text{
-padding-left: 3rem;
+
+.text {
+  padding-left: 3rem;
   font-size: 1.7rem;
-  
   font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif Bold;
+  margin-bottom: 4rem;
 }
-img{
+
+img {
   height: 100dvh;
 
 }
-body{
+
+body {
   display: grid;
-  grid-template-columns: repeat(2, 1fr auto);
+  grid-template-columns: repeat(2, 1fr 2fr);
   height: 100dvb;
+  width: 100dvh;
 
 
 }
-.container{
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
 }
 
-form{
-display: grid;
-grid-template-columns: repeat(2, auto);
-grid-template-rows: repeat(3, auto);
-gap: 1rem;
-/* border-bottom: 1px solid; */
-padding-left: 3rem;
-box-shadow: 0 1px cornflowerblue;
-
-}
-label{
-font-weight:bold;
-}
-.button{
+form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
   padding-left: 3rem;
-  margin-top: 1rem;
+  padding-right: 3rem;
+  box-shadow: 3px 3px 3px #596D48;
+  padding-bottom: 3rem;
+
 }
-.create-acc{
-  padding: 1rem 4rem;
+
+label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  background-color: #596D48;
+  padding: 0.4rem;
+  color: white;
+  border-radius: 20px;
+}
+
+input:focus {
+  background-color: white;
+  transition: 0.7s;
+  color: black;
+  border: rgb(218, 216, 209);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding-left: 3rem;
+  margin-top: 3rem;
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.create-acc:active {
+
+  background-color: rgb(92, 53, 53);
+  color: rgb(219, 208, 208);
+
+}
+
+.create-acc:hover {
+  cursor: pointer;
+}
+
+.create-acc {
+  padding: 1rem 3rem;
   border-radius: 10px;
   background-color: #596D48;
+  color: white;
+  border: #596D48;
+  box-shadow: 3px 3px 3px #173d25;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #596D48;
+  font-weight: bold;
 }

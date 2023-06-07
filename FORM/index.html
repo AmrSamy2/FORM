@@ -17,12 +17,12 @@
       <pre>This is not a real online service! You know you need something
 like this in your life to help you realize you deepest dreams.
 Sign up now to get started.</pre>
-      
+
       <p>You know you want to.</p>
       <br>
       <p>Lets do this!</p>
     </div>
-    <form action="">
+    <form id="form" action="">
 
       <div class="input">
         <label for="first">FIRST NAME</label>
@@ -37,27 +37,28 @@ Sign up now to get started.</pre>
       <div class="input">
         <label for="email">EMAIL</label>
         <br>
-        <input id="email" type="text">
+        <input id="email" type="email">
       </div>
       <div class="input">
         <label for="phone">PHONE NUMBER</label>
         <br>
-        <input id="phone" type="text">
+        <input id="phone" type="number">
       </div>
       <div class="input">
         <label for="password">PASSWORD</label>
         <br>
-        <input id="password" type="text">
+        <input minlength="6" id="password" type="password">
       </div>
       <div class="input">
         <label for="c-password">CONFIRM PASSWORD</label>
         <br>
-        <input id="c-password" type="text">
+        <input id="c-password" type="password">
       </div>
+
     </form>
     <div class="button">
-      <button class="create-acc">Create Account</button>
-      <p>Already have an account? log in</p>
+      <button form="form" class="create-acc">Create Account</button>
+      <p>Already have an account? <em><a href="">log in</a></em> </p>
     </div>
   </div>
 
