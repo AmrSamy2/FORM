@@ -1,0 +1,54 @@
+:root{
+  padding: 0;
+  margin: 0;
+   
+
+}
+
+
+
+.text{
+padding-left: 3rem;
+  font-size: 1.7rem;
+  
+  font-weight: bold;
+}
+img{
+  height: 100dvh;
+
+}
+body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr auto);
+  height: 100dvb;
+
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form{
+display: grid;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: repeat(3, auto);
+gap: 1rem;
+/* border-bottom: 1px solid; */
+padding-left: 3rem;
+box-shadow: 0 1px cornflowerblue;
+
+}
+label{
+font-weight:bold;
+}
+.button{
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+.create-acc{
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  background-color: #596D48;
+}
